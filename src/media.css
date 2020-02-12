@@ -1,0 +1,134 @@
+@media screen and (max-width:980px) {
+    .sections {
+        font-size: 16px;
+    }
+    .options-block {
+        width: 37%;
+    }
+    .information-block {
+        width: 63%;
+    }
+}
+
+/* @media screen and (max-width:890px) {
+    .sections {
+        font-size: 16px;
+    } */
+/* } */
+@media screen and (max-width:725px) {
+    .sections {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .section-item {
+        width: 30%;
+    }
+    .section-item:nth-child(4), .section-item:nth-child(5), .section-item:nth-child(6) {
+        border-top: 1px solid black;
+    }
+    .task-block {
+        height: 174px;
+    }    
+    .photo-bird {
+        height: 134px;
+    }
+    .audio {
+        height: 36px;
+        margin-top: 14px;
+        width: 88%;
+    }
+}
+@media screen and (max-width:675px) {
+    .photo-bird {
+        height: 112px;
+        width: 186px;
+    }
+    .task-block {
+        height: 135px;
+    }
+    .name-text-ul {
+        width: 51%;
+    }
+    .name-bird {
+        margin-top: 3px;
+        font-size: 20px;
+    }
+    .options-block {
+        width: 29%;
+    }
+    .options-item {
+        font-size: 16px;
+    }
+    .information-block {
+        width: 71%;
+    }
+    .species {
+        font-size: 15px;
+    }
+    .btn-next-level {
+        font-size: 24px;
+        height: 37px;
+    }
+}
+@media screen and (max-width:523px) {
+    .task-block {
+        height: 100px;
+    }
+    .photo-bird {
+        height: 82px;
+        width: 105px;
+    }
+    .name-bird {
+        margin-top: 0px;
+    }
+    .species {
+        display: none;
+    }
+    .options-block {
+        width: 30%;
+    }
+    .options-item {
+        padding-left: 4px;
+        font-size: 14px;
+    }
+    .information-block {
+        width: 70%;
+    }
+    .decription {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:424px) {
+    .logo {
+        width: 177px;
+        height: 56px;
+    }
+    .score {
+        font-size: 14px;
+    }
+    .sections {
+        font-size: 13px;
+        border-left: 1px solid black;
+        margin-bottom: 6px;
+    }
+    .task-block {
+        height: 95px;
+    }
+    .bottom-wrapper {
+        flex-direction: column;
+        margin-top: 6px;
+    }
+    .options-block {
+        height: 267px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    .options-item {
+        height: 43px;
+        padding-left: 17px;
+        font-size: 17px;
+    }
+    .information-block {
+        width: 100%;
+    }
+}
