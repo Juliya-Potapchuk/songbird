@@ -10,11 +10,6 @@
     }
 }
 
-/* @media screen and (max-width:890px) {
-    .sections {
-        font-size: 16px;
-    } */
-/* } */
 @media screen and (max-width:725px) {
     .sections {
         flex-wrap: wrap;
@@ -69,6 +64,23 @@
         font-size: 24px;
         height: 37px;
     }
+    .congratulation-text1 {
+        font-size: 49px;
+        line-height: 30px;
+    }
+    .congratulation-text2 {
+        font-size: 17px;
+        line-height: 71px;
+    }
+    .congratulation-text3 {
+        text-align: center;
+        font-size: 22px;
+        line-height: 14px;
+    }
+    .photo-man {
+        height: 150px;
+        width: 218px;
+    }
 }
 @media screen and (max-width:523px) {
     .task-block {
@@ -96,6 +108,23 @@
     }
     .decription {
         font-size: 15px;
+    }
+
+    .congratulation-block {
+        margin-top: 0;
+    }
+
+    .congratulation-text1 {
+        font-size: 31px;
+        line-height: 32px;
+    }
+    .congratulation-text2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .congratulation-text3 {
+        font-size: 20px;
+        line-height: 0px;
     }
 }
 @media screen and (max-width:424px) {
@@ -130,5 +159,8 @@
     }
     .information-block {
         width: 100%;
+    }
+    .btn-active {
+        font-size: 22px;
     }
 }

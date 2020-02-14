@@ -28,7 +28,6 @@ body {
   color: black;
   font-size: 25px;
   box-sizing: border-box;
-  border: 2px solid;
   margin: 24px 54px 0px 0;
 }
 
@@ -51,13 +50,15 @@ body {
   text-align: center;
 }
 
-.section-item:hover{
-  background: radial-gradient(circle, rgb(171, 0, 255) 0%, rgb(97, 58, 117) 32%, rgb(15, 5, 18) 100%);
-}
-
 .section-item-active {
   background: radial-gradient(circle, rgb(171, 0, 255) 0%, rgb(97, 58, 117) 32%, rgb(15, 5, 18) 100%);
+  border-left: 1px solid #423e3e;
+  list-style: none;
+  flex-grow: 1;
+  line-height: 32px;
+  text-align: center;
 }
+
 
 .task-block {
   display: flex;
@@ -74,7 +75,6 @@ body {
   background-color: #ffffff85;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('https://birds-quiz.netlify.com/static/media/bird.06a46938.jpg');
   border-radius: 8px;
 }
 
@@ -132,22 +132,36 @@ body {
   border-radius: 8px;
 }
 
+.сorrect-choise { 
+  background: #00800085;
+  height: 48px;
+  cursor: pointer;
+  padding-left: 20px;
+  list-style: none;
+  line-height: 35px;
+  font-size: 20px;
+  margin-bottom: 1px;
+  border-radius: 8px;
+}
+
+.incorrect-choise {
+  background: #ff000061;
+  height: 48px;
+  cursor: pointer;
+  padding-left: 20px;
+  list-style: none;
+  line-height: 35px;
+  font-size: 20px;
+  margin-bottom: 1px;
+  border-radius: 8px;
+ }
+
 .options-item:not(:nth-child(6)) {
   border-bottom: 1px solid #333;
 }
 
 .options-item:hover {
   background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(129,99,135,1) 100%);
-}
-
-.indicator {
-  width: 10px;
-  height: 10px;
-  background-color: #785b7f;
-  border: 2px solid #040404;
-  border-radius: 50%;
-  margin-right: 10px;
-  display: inline-block;
 }
 
 .information-block {
@@ -174,6 +188,10 @@ body {
   display: block;
 }
 
+button:active, button:focus {
+   outline: none
+  }
+
 .btn-next-level {
   border: none;
   color: white;
@@ -183,4 +201,47 @@ body {
   border-radius: 8px;
   margin-top: 10px;
   background: linear-gradient(0deg, rgba(62,62,62,1) 0%, rgba(178,178,178,1) 100%);
+}
+
+.btn-active {
+  border: none;
+  color: white;
+  font-size: 30px;
+  height: 43px;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+  background: radial-gradient(circle, rgb(171, 0, 255) 0%, rgb(97, 58, 117) 32%, rgb(15, 5, 18) 100%);
+}
+
+.congratulation-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.congratulation-text1 {
+  font-size: 95px;
+  line-height: 139px;
+}
+
+.congratulation-text2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.congratulation-text3{
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.photo-man {
+  background-position-x: 37px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 211px;
+  width: 338px;
+  background-image: url('https://i.gifer.com/7FZr.gif');
+  margin: 0 auto;
 }

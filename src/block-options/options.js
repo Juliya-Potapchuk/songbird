@@ -1,23 +1,19 @@
 import React from 'react';
 
  export class Options extends React.Component {
-
   render() {
-  const objBird1 = this.props.birdsData;
+    const birdsData = this.props.birdsData
+    const arrAnswers = this.props.arrAnswers
 
-  const listItems = objBird1.map((bird) =>
-    <li 
-    className="options-item"
-     key={bird.id}
-      my_key={bird.id}
-    onClick={(e) => { this.props.onClick(e) }} 
-    >
+    const listItems = birdsData.map((bird) =>
+      <li className={arrAnswers[bird.id]} key={bird.id} my_key={bird.id}
+        onClick={(e) => this.props.onClick(e)} >
       {bird.name}
-    </li>
-  );
+      </li>
+    );
   
-  return (
-    <ul className="options-block" >{listItems}</ul>
-  );
+    return <ul className="options-block" >{listItems}</ul>
   }
   }
+
+  
