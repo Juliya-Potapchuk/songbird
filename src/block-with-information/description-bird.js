@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class DecriptionBird extends React.Component {
+export class DescriptionBird extends React.Component {
     render() {
       const description = this.props.description;
       return <p className="decription">

@@ -2,7 +2,7 @@ import React from 'react';
 import {Photo} from '../components/bird-photo';
 import {Name} from '../components/bird-name';
 import {Audio} from '../components/bird-audio';
-import {DecriptionBird} from './decription-bird';
+import {DescriptionBird} from './description-bird';
 
 export class InformationBird extends React.Component {
     render() {
@@ -22,7 +22,7 @@ export class InformationBird extends React.Component {
                 <li className="name-text-item"><Audio audio={currentBirdObj.audio}/></li>
               </ul>
           </div> 
-          <DecriptionBird description={currentBirdObj.description}/> 
+          <DescriptionBird description={currentBirdObj.description}/> 
       </div>
     } 
     if (!currentBirdObj) {  
